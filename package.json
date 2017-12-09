@@ -4,7 +4,7 @@
   "description": "Determine the quality of javascript packages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/sspringer82/packageInfo/issues"
   },
-  "homepage": "https://github.com/sspringer82/packageInfo#readme"
+  "homepage": "https://github.com/sspringer82/packageInfo#readme",
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2"
+  }
 }
