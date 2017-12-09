@@ -1,0 +1,25 @@
+{
+  "name": "packageinfo",
+  "version": "0.0.1",
+  "description": "Determine the quality of javascript packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/packageInfo.git"
+  },
+  "keywords": [
+    "npm",
+    "javascript",
+    "packages",
+    "yarn"
+  ],
+  "author": "Sebastian Springer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sspringer82/packageInfo/issues"
+  },
+  "homepage": "https://github.com/sspringer82/packageInfo#readme"
+}
