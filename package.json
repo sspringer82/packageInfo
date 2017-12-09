@@ -25,5 +25,8 @@
   "devDependencies": {
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
   }
 }
