@@ -29,6 +29,7 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
+    "graphql-request": "^1.4.0",
     "request": "^2.83.0"
   }
 }
