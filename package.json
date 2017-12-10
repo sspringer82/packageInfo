@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/sspringer82/packageInfo#readme",
   "devDependencies": {
+    "@types/node": "^8.0.57",
+    "@types/request": "^2.0.8",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   },
