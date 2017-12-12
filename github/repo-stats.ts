@@ -18,7 +18,8 @@ async function getClient(githubUrl: string): Promise<GraphQLClient> {
 function getQuery(): string {
   return `
     query getRepoStats($owner: String!, $repoName: String!){
-      repository(owner:$owner name:$repoName) {
+      repository(owner:$owner, name:$repoName) {
+        createdAt,
         forkCount,
         stargazers {
           totalCount
