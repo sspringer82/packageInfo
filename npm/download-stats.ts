@@ -1,7 +1,4 @@
-import * as request from 'request';
-import { promisify } from 'util';
-
-const promisedRequest = <any>promisify(request);
+import { promisedRequest } from '../util/promised-request';
 
 function getDownloadUrl(pkg: string, period: string) {
   if (!['last-day', 'last-week', 'last-month'].includes(period)) {
