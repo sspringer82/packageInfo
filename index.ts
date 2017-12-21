@@ -5,3 +5,5 @@ import { getRepoStats } from './github/repo-stats';
   console.log(await getDownloadStats('gulp'));
   console.log(await getRepoStats('gulpjs', 'gulp'));
 })();
+
+process.on('unhandledRejection', rejection => console.log(rejection));
