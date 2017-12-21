@@ -7,11 +7,11 @@ function getDownloadUrl(pkg: string, period: string) {
   return `https://api.npmjs.org/downloads/point/${period}/${pkg}`;
 }
 
-export async function getDownloadStats(pkg: string) {
+export async function getDownloadStats(packageName: string) {
   const [lastDay, lastWeek, lastMonth] = await Promise.all([
-    promisedRequest(getDownloadUrl(pkg, 'last-day')),
-    promisedRequest(getDownloadUrl(pkg, 'last-week')),
-    promisedRequest(getDownloadUrl(pkg, 'last-month')),
+    promisedRequest(getDownloadUrl(packageName, 'last-day')),
+    promisedRequest(getDownloadUrl(packageName, 'last-week')),
+    promisedRequest(getDownloadUrl(packageName, 'last-month')),
   ]);
   return {
     lastDay: lastDay.body,
